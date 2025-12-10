@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@theme {
+  /* Navy Theme (Original Slate/Cyan Mappings) */
+  --color-navy-main: #0f172a;
+  --color-navy-surface: #1e293b;
+  --color-navy-border: #334155;
+
+  /* Brand Colors */
+  --color-brand-primary: #06b6d4;
+  --color-brand-hover: #0891b2;
+  --color-brand-accent: #22d3ee;
+
+  /* Text Colors */
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #cbd5e1;
+  --color-text-muted: #94a3b8;
+
+  /* Status Colors */
+  --color-status-info: #3b82f6;
+  --color-status-warning: #f59e0b;
+  --color-status-danger: #ef4444;
+  --color-status-success: #22c55e;
+
+  /* AQI Semantic Colors */
+  --color-aqi-good: #00E400;
+  --color-aqi-moderate: #FFFF00;
+  --color-aqi-sensitive: #FF7E00;
+  --color-aqi-unhealthy: #FF0000;
+  --color-aqi-very_unhealthy: #8F3F97;
+  --color-aqi-hazardous: #7E0023;
+
+  /* Shadows */
+  --shadow-navy: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  --shadow-navy-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.6), 0 4px 6px -2px rgba(0, 0, 0, 0.4);
+  --shadow-glow: 0 0 15px rgba(111, 255, 233, 0.3);
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: var(--color-text-primary);
+  background-color: var(--color-navy-main);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #0f172a;
+  /* Original Slate Dark */
+  color: #f8fafc;
+}
+
+/* Custom Scrollbar for Navy Theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
